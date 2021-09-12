@@ -1,0 +1,33 @@
+<h1 class="bg-primary text-center ">Abhijeet</h1>
+<div class="container">
+    <div class="row">
+       <div class="col-sm-12">
+            <app-servers></app-servers>
+        </div> 
+       <div class="col-sm-12">
+            <h3 class="jumbotron p-4">Stuctual Directives</h3>
+            <app-structual-directives></app-structual-directives>    
+
+        </div>
+        <div class="col-sm-12">
+            <h3 class="jumbotron p-4">Stuctual Directives</h3>
+            <app-attribute-directives></app-attribute-directives>  
+        
+
+       </div> 
+       <p [textContent]="'Hello Input and output decoratore'"></p>
+        <div class="col-sm-12"> 
+           <app-server></app-server> 
+       </div> 
+       we have used custom property to transfer data from parent to child 
+       we have used custom events to transfer data from child to parent 
+       <div class="col-sm-12">
+            <app-input-deco [msg]="msgForChild"(childEvent) ="onChildTriggered($event)"></app-input-deco>
+        </div>
+        
+    </div>
+</div> 
+<div class="container mt-4">
+    <app-std-info></app-std-info>
+
+</div>

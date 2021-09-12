@@ -1,0 +1,8 @@
+<!-- <p [ngStyle] ="{backgroundColor : getColor()}">
+   Server with ID: {{serverId}} and with server status {{serverStatus}}
+</p> -->
+<p [ngStyle] ="{backgroundColor : serverStatus == 'Online' ? 'yellowgreen' : 'red'}"
+[ngClass] ="{white : serverStatus === 'Online'}">
+   Server with ID: {{serverId}} and with server status {{serverStatus}}
+</p>
+<app-input-deco [msg]="msgFromServer"></app-input-deco>

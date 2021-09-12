@@ -1,0 +1,24 @@
+<p>attribute-directives works!</p>
+<!-- <img src="../../assets/jerry.jpg" alt="" srcset="">
+property binding -->
+<h5 [textContent]="heading"></h5>
+<h5 [innerText]="heading"></h5>
+<!-- <h6 [mytext]="userName"></h6>> -->
+<img [src]="imgUrl" alt="">
+<!-- <h6 [user]="userName"></h6> -->
+
+<hr>
+<!-- attibute binding -->
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <td>Abhijeet</td>
+            <td>Udawant</td>
+        </tr>
+        <tr>
+            <!-- <td colspan="2">abhijeet.udawant@gmaicl.com</td> -->
+            <td [attr.colspan]=colspanValue>abhijeet.udawant@gmail.com</td>
+        </tr>
+    </tbody>
+    
+</table>
